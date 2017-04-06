@@ -10,9 +10,11 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -31,29 +33,45 @@
                    Start of header
 ========================================================================== -->
 
+    <header>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+    </header>
+
     <!-- ==========================================================================
                    End of header
 ========================================================================== -->
-
-
-
-
-
-
-
 
 
     <!-- ==========================================================================
                Start of nav
 ========================================================================== -->
 
+    <nav id="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>team</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+
+
+
     <!-- ==========================================================================
                end of nav
 ========================================================================== -->
-
-
-
-
 
 
     <!-- ==========================================================================
@@ -122,6 +140,7 @@
       </figure>
 
     </section>
+
     <!-- ==========================================================================
                end of 2 part 2
 ========================================================================== -->
@@ -136,6 +155,7 @@
     <!-- ==========================================================================
                Start of equipe
 ========================================================================== -->
+
     <div>
         <article>
             <figure><img src="" alt=""></figure>
@@ -175,7 +195,49 @@
     <!-- ==========================================================================
                Start of tarif
 ========================================================================== -->
+    <section class="maintarif">
 
+        <article class="tarif">
+            <h3>INTEGRAL LITE</h3>
+            <ul>
+                <li>free <span>download</span></li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+            </ul>
+        </article>
+
+        <article class="tarif">
+            <h3>INTEGRAL PRO</h3>
+            <ul>
+                <li>free <span>download</span></li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+            </ul>
+
+        </article>
+
+        <article class="tarif">
+            <h3>MEMBERSHIP</h3>
+            <ul>
+                <li>free <span>download</span></li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li>1 Free Theme</li>
+                <li> <a href="#">Download</a></li>
+            </ul>
+
+        </article>
+
+
+    </section>
     <!-- ==========================================================================
                end of tarif
 ========================================================================== -->
@@ -191,6 +253,19 @@
                Start of contact
 ========================================================================== -->
 
+    <form class="contact" action="index.html" method="post">
+        <p class="left">
+            <input type="text" name="name" value="" placeholder="name" required>
+            <input type="email" name="mail" value="" placeholder="email" required>
+            <input type="text" name="sujet" value="" placeholder="subject" required>
+        </p>
+        <p class="right">
+            <textarea name="msg" rows="8" cols="40" placeholder="Your message"></textarea>
+            <button class="mail" type="submit"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+            </button>
+        </p>
+    </form>
+
     <!-- ==========================================================================
                end of contact
 ========================================================================== -->
@@ -205,6 +280,45 @@
     <!-- ==========================================================================
                    Start of footer
 ========================================================================== -->
+
+    <footer>
+        <Nav>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <ul>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+            </ul>
+        </Nav>
+
+
+        <Nav>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <ul>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+            </ul>
+        </Nav>
+
+
+        <Nav>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <ul>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+                <li>dozakdopazkpodzakd</li>
+                <li>dazdkzaopkdzpaokdza</li>
+            </ul>
+        </Nav>
+
+    </footer>
 
     <!-- ==========================================================================
                    End of footer
