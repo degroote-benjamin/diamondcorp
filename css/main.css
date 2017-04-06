@@ -180,12 +180,56 @@ header{
 
 
 /* ==========================================================================
-                main rules
+                tarif rules
 ========================================================================== */
+.maintarif{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.tarif{
+  background-color: black;
+  color: white;
+  width: 20%;
+}
+.tarif ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+.tarif ul li {
+  border-bottom: 1px solid white;
+  padding:5px 0;
+  width: 100%;
+}
+
+.tarif ul li:first-child{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 20px 0 ;
+}
+
+.tarif ul li:last-child{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarif a{
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px;
+}
+
 
 
 /* ==========================================================================
-                   end of main rules
+                   end of tarif rules
 ========================================================================== */
 
 
@@ -236,12 +280,17 @@ header{
                   header rules
   ========================================================================== */
 
+  #menu{
+    display: block;
+    width: 100%;
+  }
 
   #menu ul{
     display: flex;
+    background-color: red;
     list-style-type: none;
     margin: auto;
-    justify-content: space-around;;
+    justify-content: space-around;
     align-content: center;
     width: 60%;
   }
