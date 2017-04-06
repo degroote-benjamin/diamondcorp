@@ -1,31 +1,8 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -37,11 +14,6 @@ html {
     text-shadow: none;
 }
 
-
-/*
- * A better looking default horizontal rule
- */
-
 hr {
     display: block;
     height: 1px;
@@ -51,21 +23,9 @@ hr {
     padding: 0;
 }
 
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
 audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
-
-
-/*
- * Remove default fieldset styles.
- */
 
 fieldset {
     border: 0;
@@ -73,19 +33,9 @@ fieldset {
     padding: 0;
 }
 
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
     resize: vertical;
 }
-
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -99,10 +49,195 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   *
+   {
+     margin: 0;
+     padding: 0;
+   }
+
+   section
+   {
+     justify-content: center;
+     flex-wrap: wrap;
+     display: flex;
+   }
+
+   figure.service {
+     font-family: sans-serif;
+     position: relative;
+     overflow: hidden;
+     margin: 10px 1%;
+     min-width: 230px;
+     max-width: 315px;
+     width: 100%;
+     color: #000000;
+     text-align: center;
+     -webkit-perspective: 50em;
+     perspective: 50em;
+   }
+
+   figure.service img {
+     max-width: 100%;
+     vertical-align: top;
+   }
+   figure.service figcaption {
+     top: 50%;
+     left: 20px;
+     right: 20px;
+     position: absolute;
+     opacity: 0;
+     z-index: 1;
+   }
+
+   figure.service h2,
+   figure.service h4 {
+     margin: 0;
+   }
+   figure.service h2 {
+     font-weight: 600;
+   }
+   figure.service h4 {
+     font-weight: 400;
+     text-transform: uppercase;
+   }
+   figure.service i {
+     font-size: 32px;
+   }
+   figure.service:after {
+     background-color: #ffffff;
+     position: absolute;
+     content: "";
+     display: block;
+     top: 20px;
+     left: 20px;
+     right: 20px;
+     bottom: 20px;
+     -webkit-transition: all 0.4s ease-in-out;
+     transition: all 0.4s ease-in-out;
+     -webkit-transform: rotateX(-90deg);
+     transform: rotateX(-90deg);
+     -webkit-transform-origin: 50% 50%;
+     -ms-transform-origin: 50% 50%;
+     transform-origin: 50% 50%;
+     opacity: 0;
+   }
+   figure.service a {
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     position: absolute;
+     z-index: 1;
+   }
+
+   figure.service figcaption {
+     -webkit-transform: translateY(-50%);
+     transform: translateY(-50%);
+     opacity: 1;
+     -webkit-transition-delay: 0.2s;
+     transition-delay: 0.2s;
+   }
+   figure.service:after {
+     -webkit-transform: rotateX(0);
+     transform: rotateX(0);
+     opacity: 0.9;
+   }
 
 /* ==========================================================================
                     common rules
 ========================================================================== */
+
+figure.dude {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 10px 5px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 310px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.dude * {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.dude img {
+  opacity: 0.25;
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+figure.dude figcaption {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+  transform: rotate(0deg) translateY(-50%) scale(1);
+  -webkit-transform-origin: center 0;
+  transform-origin: center 0;
+}
+
+figure.dude figcaption h2 {
+  top: 50%;
+  letter-spacing: -1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+figure.dude figcaption h2 span {
+  font-weight: 800;
+}
+
+figure.dude figcaption:before,
+figure.dude figcaption:after {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.dude figcaption:before {
+  left: 0;
+  top: 0;
+}
+
+figure.dude figcaption:after {
+  bottom: 0;
+  right: 0;
+}
+
+figure.dude.blue {
+  background: #091b27;
+}
+
+figure.dude.red {
+  background: #2e0e0a;
+}
+
+figure.dude a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
 
 
 /* ==========================================================================
@@ -188,22 +323,214 @@ textarea {
 
 @media (min-width:1024px) {
   /* ==========================================================================
-                      common rules
+                      service
+  ========================================================================== */
+
+  figure.service {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+  }
+  figure.service * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  figure.service img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  figure.service figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+  }
+  figure.service h2,
+  figure.service h4 {
+    margin: 0;
+  }
+  figure.service h2 {
+    font-weight: 600;
+  }
+  figure.service h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  figure.service i {
+    font-size: 32px;
+  }
+  figure.service:after {
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0;
+  }
+  figure.service a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  figure.service:hover figcaption
+  {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  figure.service:hover:after
+  {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0.9;
+  }
+
+  /* ==========================================================================
+                     end of service
   ========================================================================== */
 
 
   /* ==========================================================================
-                     end of common rules
+                  teamblock
   ========================================================================== */
 
+  figure.dude {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: 10px 5px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 310px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
 
+  figure.dude * {
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+
+  figure.dude img {
+    opacity: 0.25;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  figure.dude figcaption {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 30px;
+    -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+    transform: rotate(0deg) translateY(-50%) scale(1);
+    -webkit-transform-origin: center 0;
+    transform-origin: center 0;
+  }
+
+  figure.dude figcaption h2 {
+    top: 50%;
+    letter-spacing: -1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  figure.dude figcaption h2 span {
+    font-weight: 800;
+  }
+
+  figure.dude figcaption:before,
+  figure.dude figcaption:after {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    content: "";
+    display: block;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+
+  figure.dude figcaption:before {
+    left: 0;
+    top: 0;
+  }
+
+  figure.dude figcaption:after {
+    bottom: 0;
+    right: 0;
+  }
+
+  figure.dude.blue {
+    background: #091b27;
+  }
+
+  figure.dude.red {
+    background: #2e0e0a;
+  }
+
+  figure.dude a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+  figure.dude:hover img
+  {
+    opacity: 1;
+  }
+
+  figure.dude:hover figcaption
+  {
+    -webkit-transform: rotate(-45deg) translateY(-50%) scale(0.9);
+    transform: rotate(-45deg) translateY(-50%) scale(0.9);
+  }
+
+  figure.dude:hover figcaption:before ,
+  figure.dude:hover figcaption:after
+  {
+    width: 200%;
+  }
   /* ==========================================================================
-                  header rules
-  ========================================================================== */
-
-
-  /* ==========================================================================
-                     end of header rules
+                     end of teamblock
   ========================================================================== */
 
 
