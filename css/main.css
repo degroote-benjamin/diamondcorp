@@ -55,7 +55,7 @@ textarea {
      padding: 0;
    }
 
-   section
+   .center
    {
      justify-content: center;
      flex-wrap: wrap;
@@ -65,15 +65,12 @@ textarea {
    figure.service {
      font-family: sans-serif;
      position: relative;
-     overflow: hidden;
      margin: 10px 1%;
      min-width: 230px;
      max-width: 315px;
      width: 100%;
      color: #000000;
      text-align: center;
-     -webkit-perspective: 50em;
-     perspective: 50em;
    }
 
    figure.service img {
@@ -112,13 +109,6 @@ textarea {
      left: 20px;
      right: 20px;
      bottom: 20px;
-     -webkit-transition: all 0.4s ease-in-out;
-     transition: all 0.4s ease-in-out;
-     -webkit-transform: rotateX(-90deg);
-     transform: rotateX(-90deg);
-     -webkit-transform-origin: 50% 50%;
-     -ms-transform-origin: 50% 50%;
-     transform-origin: 50% 50%;
      opacity: 0;
    }
    figure.service a {
@@ -134,12 +124,8 @@ textarea {
      -webkit-transform: translateY(-50%);
      transform: translateY(-50%);
      opacity: 1;
-     -webkit-transition-delay: 0.2s;
-     transition-delay: 0.2s;
    }
    figure.service:after {
-     -webkit-transform: rotateX(0);
-     transform: rotateX(0);
      opacity: 0.9;
    }
 
@@ -168,7 +154,6 @@ figure.dude * {
 }
 
 figure.dude img {
-  opacity: 0.25;
   max-width: 100%;
   position: relative;
   top: 0;
@@ -181,9 +166,6 @@ figure.dude figcaption {
   left: 30px;
   right: 30px;
   -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
-  transform: rotate(0deg) translateY(-50%) scale(1);
-  -webkit-transform-origin: center 0;
-  transform-origin: center 0;
 }
 
 figure.dude figcaption h2 {
@@ -208,8 +190,6 @@ figure.dude figcaption:after {
   position: absolute;
   content: "";
   display: block;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
 }
 
 figure.dude figcaption:before {
