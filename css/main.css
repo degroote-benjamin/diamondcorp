@@ -204,10 +204,10 @@ header{
      position: absolute;
      content: "";
      display: block;
-     top: 20px;
-     left: 20px;
-     right: 20px;
-     bottom: 20px;
+     top: 50px;
+     left: 50px;
+     right: 50px;
+     bottom: 50px;
      opacity: 0;
    }
    figure.service a {
