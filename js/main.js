@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // Define the height of your hero here
-  var heroHeight = 1000;
+  var heroHeight = 955;
 
   $(window).scroll(function() {
     if ($(document).scrollTop() < heroHeight) {
