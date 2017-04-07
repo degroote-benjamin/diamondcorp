@@ -65,58 +65,50 @@ textarea {
     display: flex;
 }
 
-.regularhr
-{
-  width: 7em;
-  margin: 30px auto;
-  background-color: #FF3745;
-  color: #FF3745;
-  height: 2px;
+.regularhr {
+    width: 7em;
+    margin: 30px auto;
+    background-color: #FF3745;
+    color: #FF3745;
+    height: 2px;
 }
 
-.grey
-{
-  background-color: rgb(240, 240, 240);
-  margin-bottom: 50px;
+.grey {
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 50px;
 }
 
-.white
-{
-  margin-bottom: 50px;
+.white {
+    margin-bottom: 50px;
 }
 
-.grey , .white
-{
+.grey, .white {
     margin-bottom: 40px;
     padding: 40px 0 80px 0;
 }
 
-
-p
-{
-  width: 80%;
-  text-align: justify;
-  margin: auto;
+p {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
 }
 
-article
-{
-  text-align: center;
+article {
+    text-align: center;
 }
 
-h1 , h3
-{
-  margin: 0 0 0 0;
-  font-size: 40px;
-  font-weight: 400;
-  color:#303030;
+h1, h3 {
+    margin: 0 0 0 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: #303030;
 }
 
-figcaption .fa
-{
-  font-size: 50px;
-  margin-bottom: 20px;
+figcaption .fa {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
+
 
 /* ==========================================================================
                    end of common rules
@@ -127,20 +119,19 @@ figcaption .fa
                 header rules
 ========================================================================== */
 
-header
-{
+header {
     background: url("../img/HD.jpg") no-repeat fixed center;
     height: 100vh;
     width: 100%;
 }
 
-header nav
-{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
+
 
 /* ==========================================================================
                    end of header rules
@@ -154,7 +145,6 @@ header nav
 #menu {
     display: none;
 }
-
 
 .sidenav {
     height: 100%;
@@ -190,6 +180,7 @@ header nav
     margin-left: 50px;
 }
 
+
 /* ==========================================================================
                 end of nav rules
 ========================================================================== */
@@ -199,70 +190,75 @@ header nav
                 Introduction
    ========================================================================== */
 
-   figure.service {
-     font-family: sans-serif;
-     position: relative;
-     margin: 10px 1%;
-     min-width: 230px;
-     max-width: 315px;
-     width: 100%;
-     color: #000000;
-     text-align: center;
-   }
+figure.service {
+    font-family: sans-serif;
+    position: relative;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+}
 
-   figure.service img {
-     max-width: 100%;
-     vertical-align: top;
-   }
-   figure.service figcaption {
-     top: 50%;
-     left: 20px;
-     right: 20px;
-     position: absolute;
-     opacity: 0;
-     z-index: 1;
-   }
+figure.service img {
+    max-width: 100%;
+    vertical-align: top;
+}
 
-   figure.service h2,
-   figure.service h4 {
-     margin: 0;
-   }
-   figure.service h2 {
-     font-weight: 600;
-   }
-   figure.service h4 {
-     font-weight: 400;
-     text-transform: uppercase;
-   }
+figure.service figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
 
-   figure.service:after {
-     background-color: #ffffff;
-     position: absolute;
-     content: "";
-     display: block;
-     top: 50px;
-     left: 50px;
-     right: 50px;
-     bottom: 50px;
-     opacity: 0;
-   }
-   figure.service a {
-     left: 0;
-     right: 0;
-     top: 0;
-     bottom: 0;
-     position: absolute;
-     z-index: 1;
-   }
+figure.service h2, figure.service h4 {
+    margin: 0;
+}
 
-   figure.service figcaption {
-     -webkit-transform: translateY(-50%);
-     transform: translateY(-50%);
-     opacity: 1;
-   }
-   figure.service:after {
-     opacity: 0.9;
-   }
+figure.service h2 {
+    font-weight: 600;
+}
+
+figure.service h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+figure.service:after {
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+}
+
+figure.service a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.service figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+figure.service:after {
+    opacity: 0.9;
+}
+
 
 /* ==========================================================================
                     End of Introduction
@@ -450,7 +446,6 @@ figure.dude a {
     width: 80%;
 }
 
-
 .left input {
     width: 95%;
     height: 40px;
@@ -484,19 +479,19 @@ footer {
     flex-direction: column;
 }
 
-footer nav{
-  width: 100%;
-  padding-bottom: 15px;
+footer nav {
+    width: 100%;
+    padding-bottom: 15px;
 }
 
 footer ul {
-  width: 70%;
-  margin: auto;
-  list-style-type: none;
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
 }
 
 footer ul li {
-  text-align: center;
+    text-align: center;
 }
 
 
@@ -508,59 +503,52 @@ footer ul li {
     /* ==========================================================================
                       tarif rules
   ========================================================================== */
-    .tarif{
-      width: 30%;
+    .tarif {
+        width: 30%;
     }
-
     /* ==========================================================================
                      end of tarif rules
   ========================================================================== */
-  /* ==========================================================================
+    /* ==========================================================================
                     contact rules
 ========================================================================== */
-.contact {
-    display: flex;
-    width: 60%;
-    margin: auto;
-    justify-content:space-between;
-    flex-direction: row;
-}
-
-.left, .right {
-    width: 47%;
-}
-
-  /* ==========================================================================
+    .contact {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .left, .right {
+        width: 47%;
+    }
+    /* ==========================================================================
                    end of contact rules
 ========================================================================== */
 }
 
 @media (min-width:1024px) {
-  /* ==========================================================================
+    /* ==========================================================================
                 header rules
 ========================================================================== */
-header nav{
-  display: none;
-}
-
-  #menu {
-      display: block;
-      width: 100%;
-      z-index: 999;
-  }
-
-  #menu ul {
-      display: flex;
-      background-color: red;
-      list-style-type: none;
-      margin: auto;
-      justify-content: space-around;
-      align-content: center;
-      width: 60%;
-  }
-
-
-  /* ==========================================================================
+    header nav {
+        display: none;
+    }
+    #menu {
+        display: block;
+        width: 100%;
+        z-index: 999;
+    }
+    #menu ul {
+        display: flex;
+        background-color: red;
+        list-style-type: none;
+        margin: auto;
+        justify-content: space-around;
+        align-content: center;
+        width: 60%;
+    }
+    /* ==========================================================================
                    end of header rules
 ========================================================================== */
     /* ==========================================================================
@@ -608,7 +596,6 @@ header nav{
         font-weight: 400;
         text-transform: uppercase;
     }
-
     figure.service:after {
         background-color: #ffffff;
         position: absolute;
@@ -750,7 +737,6 @@ header nav{
     /* ==========================================================================
                      end of common rules
   ========================================================================== */
-
     /* ==========================================================================
                   main rules
   ========================================================================== */
@@ -760,20 +746,17 @@ header nav{
     /* ==========================================================================
                               start of footer rules
   ========================================================================== */
-  footer {
-      flex-direction: row;
-      width: 70%;
-  }
-
-  footer nav{
-    width: 32%;
-    padding-bottom: 15px;
-  }
-
-  footer ul {
-    width: 100%;
-  }
-
+    footer {
+        flex-direction: row;
+        width: 70%;
+    }
+    footer nav {
+        width: 32%;
+        padding-bottom: 15px;
+    }
+    footer ul {
+        width: 100%;
+    }
     /* ==========================================================================
                                        end of footer rules
   ========================================================================== */
