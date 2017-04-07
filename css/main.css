@@ -65,6 +65,30 @@ textarea {
   display: flex;
 }
 
+.regularhr
+{
+  width: 7em;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+p
+{
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+
+article
+{
+  text-align: center;
+}
+
+h1 , h3
+{
+  margin: 40px auto;
+  margin-top: 80px;
+}
 /* ==========================================================================
                    end of common rules
 ========================================================================== */
@@ -136,7 +160,6 @@ header{
 /* ==========================================================================
                 Introduction
    ========================================================================== */
-
 
    figure.service {
      font-family: sans-serif;
