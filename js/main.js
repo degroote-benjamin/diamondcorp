@@ -1,14 +1,13 @@
 $(document).ready(function() {
 
   // Define the height of your hero here
-  var heroHeight = 955;
+  var heroHeight = 800;
 
   $(window).scroll(function() {
     if ($(document).scrollTop() < heroHeight) {
 
       $("#menu").css({
-        "position": "absolute",
-        "top": heroHeight
+        "position": "relative",
       });
     } else {
       $("#menu").css({

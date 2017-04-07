@@ -436,7 +436,6 @@ figure.dude a {
 }
 
 .mail {
-    background: url("../img/mail.png") center no-repeat fixed;
     background-color: black;
 }
 
@@ -452,13 +451,25 @@ figure.dude a {
 
 footer {
     display: flex;
-    width: 60%;
+    width: 100%;
     margin: auto;
     justify-content: space-around;
     align-content: center;
+    flex-direction: column;
 }
 
-footer nav i {
+footer nav{
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+footer ul {
+  width: 70%;
+  margin: auto;
+  list-style-type: none;
+}
+
+footer ul li {
   text-align: center;
 }
 
@@ -511,6 +522,7 @@ header nav{
       width: 100%;
       z-index: 999;
   }
+
   #menu ul {
       display: flex;
       background-color: red;
@@ -520,6 +532,8 @@ header nav{
       align-content: center;
       width: 60%;
   }
+
+
   /* ==========================================================================
                    end of header rules
 ========================================================================== */
@@ -720,8 +734,22 @@ header nav{
                      end of main rules
   ========================================================================== */
     /* ==========================================================================
-                              end of footer rules
+                              start of footer rules
   ========================================================================== */
+  footer {
+      flex-direction: row;
+      width: 70%;
+  }
+
+  footer nav{
+    width: 32%;
+    padding-bottom: 15px;
+  }
+
+  footer ul {
+    width: 100%;
+  }
+
     /* ==========================================================================
                                        end of footer rules
   ========================================================================== */
