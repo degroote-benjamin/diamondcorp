@@ -73,23 +73,48 @@ textarea {
     height: 2px;
 }
 
-.grey {
-    background-color: rgb(240, 240, 240);
-    margin-bottom: 50px;
+.lightgrey
+{
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 50px;
+  margin-top: 40px;
+
 }
 
-.white {
-    margin-bottom: 50px;
+.grey , .greyb
+{
+    background-color: rgb(40, 40, 40);
 }
 
-.grey, .white {
-    margin-bottom: 40px;
+.greyb
+{
+  padding-top: 40px;
+  color: white;
+}
+
+.greyc
+{
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+.greyb i
+{
+  color: #FF3745;
+  font-size: 25px;
+}
+
+
+.grey , .white , .lightgrey
+{
     padding: 40px 0 80px 0;
+    margin-bottom: 50px;
 }
 
 p {
     width: 80%;
-    text-align: justify;
+    text-align: center;
     margin: auto;
 }
 
@@ -97,8 +122,8 @@ article {
     text-align: center;
 }
 
-h1, h3 {
-    margin: 0 0 0 0;
+h3 {
+    margin: 40px 0 0 0;
     font-size: 40px;
     font-weight: 400;
     color: #303030;
@@ -109,6 +134,15 @@ figcaption .fa {
     margin-bottom: 20px;
 }
 
+.greytext
+{
+  color: white;
+}
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
 
 /* ==========================================================================
                    end of common rules
@@ -120,9 +154,20 @@ figcaption .fa {
 ========================================================================== */
 
 header {
-    background: url("../img/HD.jpg") no-repeat fixed center;
+    background-color: #303030;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header nav {
@@ -132,6 +177,16 @@ header nav {
     z-index: 999;
 }
 
+header i
+{
+  color: white;
+  font-size: 10em !important;
+}
+
+h1
+{
+  color: white;
+}
 
 /* ==========================================================================
                    end of header rules
@@ -180,6 +235,11 @@ header nav {
     margin-left: 50px;
 }
 
+nav span
+{
+  color: #FF3745;
+}
+
 
 /* ==========================================================================
                 end of nav rules
@@ -193,7 +253,7 @@ header nav {
 figure.service {
     font-family: sans-serif;
     position: relative;
-    margin: 10px 1%;
+    margin: 20px 25px;
     min-width: 230px;
     max-width: 315px;
     width: 100%;
@@ -273,7 +333,7 @@ figure.dude {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
     display: inline-block;
-    margin: 10px 5px;
+    margin: 20px 25px;
     min-width: 220px;
     max-width: 310px;
     max-height: 310px;
@@ -312,6 +372,7 @@ figure.dude figcaption h2 {
     padding: 10px 0;
     margin: 0;
     font-weight: 400;
+    font-size: 22px;
 }
 
 figure.dude figcaption h2 span {
@@ -374,12 +435,12 @@ figure.dude a {
 }
 
 .tarif {
-    background-color: black;
+    background-color: #FF3745;
     color: white;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-bottom: 30px;
-    border: 2px solid white;
+    border: 2px solid #FF3745;
     border-radius: 4px;
 }
 
@@ -389,7 +450,6 @@ figure.dude a {
 }
 
 .tarif ul li {
-    border-bottom: 1px solid white;
     padding: 5px 0;
     width: 100%;
 }
@@ -399,7 +459,7 @@ figure.dude a {
     flex-direction: column;
     text-align: center;
     background-color: white;
-    color: black;
+    color: #222;
     padding: 20px 0;
     font-weight: bolder;
     font-size: 200%;
@@ -452,12 +512,20 @@ figure.dude a {
     margin-bottom: 10px;
 }
 
+.left input , textarea
+{
+    border-radius: 4px;
+    border: 1px solid rgb(210, 210, 210);
+    text-indent: 15px;
+}
+
 .right i {
     color: white;
 }
 
 .mail {
-    background-color: black;
+    background-color: #FF3745;
+    border-style: none;
 }
 
 
@@ -469,6 +537,14 @@ figure.dude a {
 /* ==========================================================================
                             start of footer rules
 ========================================================================== */
+iframe
+{
+  width: 100%;
+  height: 10em;
+  border-style: none;
+  border-top: 2px solid #FF3745;
+}
+
 
 footer {
     display: flex;
@@ -493,7 +569,10 @@ footer ul {
 footer ul li {
     text-align: center;
 }
-
+footer ul li i
+{
+  margin-bottom: 20px;
+}
 
 /* ==========================================================================
                                      end of footer rules
@@ -541,12 +620,19 @@ footer ul li {
     }
     #menu ul {
         display: flex;
-        background-color: red;
+        background-color: #FF3745;
         list-style-type: none;
         margin: auto;
-        justify-content: space-around;
+        justify-content: center;
         align-content: center;
-        width: 60%;
+        width: 100%;
+    }
+
+    #menu ul li
+    {
+      padding: 1em 3em;
+      color: white;
+      font-weight: 600;
     }
     /* ==========================================================================
                    end of header rules
@@ -633,6 +719,11 @@ footer ul li {
         -webkit-transform: rotateX(0);
         transform: rotateX(0);
         opacity: 0.9;
+    }
+
+    .center
+    {
+      padding: 4em;
     }
     /* ==========================================================================
                      end of service

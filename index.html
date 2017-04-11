@@ -34,6 +34,11 @@
 ========================================================================== -->
 
     <header>
+      <figure>
+        <i class="fa fa-diamond fa-5x" aria-hidden="true"></i>
+        <figcaption><h1>Diamond Corp.</h1></figcaption>
+      </figure>
+
         <nav>
 
             <div id="mySidenav" class="sidenav">
@@ -61,11 +66,11 @@
 
     <nav id="menu">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>team</li>
-            <li>contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
 
@@ -80,7 +85,7 @@
                Start of 2 part 1
 ========================================================================== -->
 
-    <article class="white">
+    <article class="white" id="about">
         <h3>Who we are</h3>
         <hr class="regularhr">
         <p>Founded by 2 genius, often compared to Steve Jobs, Bill Gate and even the Daft Punk, Diamond Corp. has since become a solid reference in software development and network applications. Our goal is simple: Client satisfaction is our priority. Diamond
@@ -91,14 +96,11 @@
     <section class="grey">
 
         <article>
-            <h3>What we do</h3>
+            <h3 class="greytext">What we do</h3>
             <hr class="regularhr">
         </article>
 
         <section class="center">
-
-
-
 
             <figure class="service">
                 <img src="img/mwebdesign.png" alt="web design" />
@@ -109,7 +111,8 @@
                 <a href="#"></a>
             </figure>
 
-            <figure class="service"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+            <figure class="service">
+                <img src="img/dev.png" alt="web design" />
                 <figcaption>
                     <i class="fa fa-desktop" aria-hidden="true"></i>
                     <h2>Development </h2>
@@ -117,7 +120,8 @@
                 <a href="#"></a>
             </figure>
 
-            <figure class="service"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample28.jpg" alt="sq-sample28" />
+            <figure class="service">
+              <img src="img/photo.png" alt="sq-sample28" />
                 <figcaption>
                     <i class="fa fa-camera" aria-hidden="true"></i>
                     <h2>Potography</h2>
@@ -125,7 +129,8 @@
                 <a href="#"></a>
             </figure>
 
-            <figure class="service"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample26.jpg" alt="sq-sample26" />
+            <figure class="service">
+              <img src="img/branding.png" alt="sq-sample26" />
                 <figcaption>
                     <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
                     <h2>Branding</h2>
@@ -133,7 +138,8 @@
                 <a href="#"></a>
             </figure>
 
-            <figure class="service"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+            <figure class="service">
+              <img src="img/market.png" />
                 <figcaption>
                     <i class="fa fa-line-chart" aria-hidden="true"></i>
                     <h2>Marketing </h2>
@@ -141,7 +147,8 @@
                 <a href="#"></a>
             </figure>
 
-            <figure class="service"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample28.jpg" alt="sq-sample28" />
+            <figure class="service">
+              <img src="img/support.png" alt="sq-sample28" />
                 <figcaption>
                     <i class="fa fa-life-ring" aria-hidden="true"></i>
                     <h2>Support</h2>
@@ -168,20 +175,20 @@
                Start of equipe
 ========================================================================== -->
 
-    <article>
+    <article id="team">
         <h3>The Team</h3>
         <hr class="regularhr">
     </article>
 
     <section class="center">
 
-        <figure class="dude red"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample6.jpg" alt="sq-sample6" />
+        <figure class="dude red"><img src="img/jcvd.png"  />
             <figcaption>
                 <h2>Benjamin  <span>Degroote</span></h2>
             </figcaption>
             <a href="#"></a>
         </figure>
-        <figure class="dude blue"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample14.jpg" alt="sq-sample14" />
+        <figure class="dude blue"><img src="img/jackie.png" />
             <figcaption>
                 <h2>Dhaifallah   <span>Zerhoui</span></h2>
             </figcaption>
@@ -205,7 +212,8 @@
     <!-- ==========================================================================
                Start of tarif
 ========================================================================== -->
-    <article>
+
+    <article id="service">
         <h3>Pricing Table</h3>
         <hr class="regularhr">
     </article>
@@ -253,7 +261,6 @@
 
         </article>
 
-
     </section>
     <!-- ==========================================================================
                end of tarif
@@ -269,6 +276,8 @@
     <!-- ==========================================================================
                Start of contact
 ========================================================================== -->
+  <section class="greyc" id="contact">
+
     <article>
         <h3>Contact</h3>
         <hr class="regularhr">
@@ -288,27 +297,34 @@
         </p>
     </form>
 
+  </section>
+
     <!-- ==========================================================================
                end of contact
 ========================================================================== -->
 
+    <!-- ==========================================================================
+               maps
+    ========================================================================== -->
 
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12420.601524132726!2d-77.0365298!3d38.8976763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x715969d86d0b76bf!2sMaison+Blanche!5e0!3m2!1sfr!2sfr!4v1491898428064"></iframe>
 
 
-
-
+    <!-- ==========================================================================
+               end of cmaps
+    ========================================================================== -->
 
     <!-- ==========================================================================
                    Start of footer
 ========================================================================== -->
+  <section class="greyb">
 
     <footer>
         <nav>
             <ul>
                 <li><i class="fa fa-phone fa-1x" aria-hidden="true"></i></li>
                 <li>Phone: +963 11 33502300</li>
-                <li>+963 11 33500600</li>
                 <li>Fax: +963 11 33502031</li>
             </ul>
         </nav>
@@ -317,25 +333,29 @@
         <Nav>
             <ul>
                 <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
-                <li>Diamond Inc </li>
-                <li></li>
-                <li></li>
+                <li>General Inquiries : info@diamond.com </li>
+                <br>
+                <li>Sales department : sales@diamond.com</li>
+                <br>
+                <li>Technical Support : support@diamond.com</li>
             </ul>
         </Nav>
 
 
         <Nav>
 
-            <ul>
+            <ul id="location">
                 <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
-                <li>General Inquiries: info@diamond.sy </li>
-                <li>Sales department: sales@diamond.sy</li>
-                <li>Technical Support: support@diamond.sy</li>
+                <li>Location : </li>
+                <li>1600 Pennsylvania Ave NW</li>
+                <li>Washington, DC 20500</li>
+                <li>United-States</li>
             </ul>
         </Nav>
 
     </footer>
 
+  </section>
     <!-- ==========================================================================
                    End of footer
 ========================================================================== -->
